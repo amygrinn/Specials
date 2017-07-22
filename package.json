@@ -1,0 +1,31 @@
+{
+  "name": "specials",
+  "version": "1.0.0",
+  "description": "Get the specials from nearby restaurants tonight",
+  "main": "artifacts/bundle.js",
+  "scripts": {
+    "start": "concurrently \"tsc -w\" \"npm run watch-css\" \"npm run watch-html\" \"npm run watch-webpack\" \"npm run serve\"",
+    "build-css": "node-sass src/main.scss dist/main.css",
+    "watch-css": "nodemon -e scss --watch src -x \"npm run build-css && browser-sync reload\"",
+    "build-html": "XCOPY /Y/I src\\index.html dist\\",
+    "watch-html": "nodemon -e html --watch src -x \"npm run build-html && browser-sync reload\"",
+    "build-assets": "XCOPY /Y/E/I src\\assets dist\\assets",
+    "watch-assets": "nodemon --watch src/assets -x \"npm run build-assets && browser-sync reload\"",
+    "webpack": "webpack --env=dev",
+    "watch-webpack": "nodemon -e tsx,ts --watch src -x \"npm run webpack && browser-sync reload\"",
+    "serve": "browser-sync start --server --ss dist --port 3000",
+    "prod": "npm run build-css && npm run build-html && npm run build-assets && tsc && webpack --env=prod",
+    "upload": "npm run prod && firebase deploy"
+  },
+  "author": "Tyler Grinn & Jeff Grinn",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "3.5.0",
+    "typescript": "2.4.2",
+    "browser-sync": "2.18.13",
+    "node-sass": "4.5.3",
+    "nodemon": "1.11.0",
+    "webpack": "3.3.0",
+    "firebase": "4.1.3"
+  }
+}
