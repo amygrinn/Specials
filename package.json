@@ -4,7 +4,7 @@
   "description": "Get the specials from nearby restaurants tonight",
   "main": "artifacts/bundle.js",
   "scripts": {
-    "start": "concurrently \"tsc -w\" \"npm run watch-css\" \"npm run watch-html\" \"npm run watch-webpack\" \"npm run serve\"",
+    "start": "concurrently \"tsc -w\" \"npm run watch-css\" \"npm run watch-html\" \"npm run watch-assets\" \"npm run watch-webpack\" \"npm run serve\"",
     "build-css": "node-sass src/main.scss dist/main.css",
     "watch-css": "nodemon -e scss --watch src -x \"npm run build-css && browser-sync reload\"",
     "build-html": "XCOPY /Y/I src\\index.html dist\\",
