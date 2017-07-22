@@ -1,4 +1,4 @@
-# Specials!
+# [Specials!](https://specials-a1572.firebaseapp.com/)
 
 ### Required programs
 * [Visual Studio Code](https://code.visualstudio.com/) (**not** Visual Studio)
@@ -41,3 +41,5 @@ Run ``` npm start ``` to run the start script I wrote in the "package.json" file
 Run ``` npm run upload ``` to build a production version (minified) of the code and upload it to the firebase server. It will then be available on the android app.
 
 To build the android app, open android studio and open the android folder. Start up an emulator from genymotion then click the green play button in android studio to load it on the phone. Unless any changes are made to the android app you'll only need to build it once and from then on you can just open genymotion.
+
+The firebase server hosting url is https://specials-a1572.firebaseapp.com/
