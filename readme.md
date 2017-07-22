@@ -32,9 +32,9 @@ Artifacts, dist, and node_modules are all exluded from the git repository so any
 ## Starting up
 
 #### Configuration
-Run ``` git clone https://github.com/tylergrinn/Specials.git``` in the directory you want the project in.
+Run ``` git clone https://github.com/tylergrinn/Specials.git``` in the directory you want the project in.  
 Run ``` npm install ``` to populate the node_modules folder with the required packages listed in "package.json"  
-Run ``` firebase login ``` then ``` firebase init ``` to set up uploading to the server. Choose the hosting option when asked.
+Run ``` npm install -g firebase-tools ``` then ``` firebase login ``` then ``` firebase init ``` to set up uploading to the server. Choose the hosting option when asked.
 
 #### Running
 Run ``` npm start ``` to run the start script I wrote in the "package.json" file. This will open up your browser with the app and live reload all changes made in the src folder. In chrome, ``` ctrl+shift+i ``` opens up the developer options. You can see the ``` console.log("message"); ``` calls show up here for debugging. Also the top, second to the left, button toggles emulating a mobile phone.  
