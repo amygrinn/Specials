@@ -1,0 +1,14 @@
+
+
+from command prompt
+
+
+# how to update to git server
+git add .  (Commits all changes)
+git commit -m "message"
+git push
+
+
+
+# Retrieve Tyler's changes
+git pull
