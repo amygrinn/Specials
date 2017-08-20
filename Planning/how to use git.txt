@@ -12,3 +12,6 @@ git push
 
 # Retrieve Tyler's changes
 git pull
+
+
+To open our GIT project "Specials" - follow Tyler's invite to the GIT page (figure out how to get there without this invite)
