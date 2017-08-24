@@ -2,6 +2,8 @@
 
 from command prompt
 
+cd to Specials directory
+
 
 # how to update to git server
 git add .  (Commits all changes)
