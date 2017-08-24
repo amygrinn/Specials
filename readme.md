@@ -12,6 +12,9 @@
 [Git tutorial](https://try.github.io/levels/1/challenges/1)  
 [css Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)  
 [css Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
+[Angular tour of heroes tutorial](https://angular.io/tutorial)
+* Go through the tutorial and read through the documentation at the same time; when one confuses you go to the other. Start with the tutorial and get through page 2 before starting the docs.
+* Fundamentals/Architecture & Fundamentals/Template & Data Binding/* are the most important docs, Forms is a good read too.
 
 ### Source code organization
 * android  
