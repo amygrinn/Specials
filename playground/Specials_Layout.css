@@ -1,0 +1,105 @@
+/* Grid Container */
+
+/* Warning - the grid-template-column & row height are fixed if using px,
+It will only gaurantee that the text that fits will show.
+All rows wrap around, however, they are overwritten by the next row.
+Therefore, only the last row would show it's full text.
+*/
+
+.resultsList {
+    display: grid;
+    /* font-size: 25px; */
+    grid-template-columns: 303px;
+    grid-template-rows: 20px 46px 35px;
+  }
+
+/* Grid Items 
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end  */
+
+     .phoneStatus {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     background-color: rgb(138,59,31);
+    }
+    .titleFilter {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(138,59,31);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tabSelections {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: rgb(138,59,31);
+    }
+
+    .individualResults {
+        display: grid;
+        grid-template-columns: 106px 24px 172px;
+        grid-template-rows: 30px 30px 30px;
+      }
+
+        .imageResult {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background-color: yellow;
+    }
+
+        .numberResult {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4
+        }
+
+        .itemResult {
+            font-size: 10px;
+            font-weight: bold;
+            color: black;
+            justify-content: flex-start;
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .priceResult {
+            font-size: 10px;
+            font-weight: bold;
+            color: black;
+            justify-content: flex-start;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .distResult {
+            font-size: 10px;
+            font-weight: bold;
+            color: grey;
+            justify-content: flex-end;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .establishmentResult {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
